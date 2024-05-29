@@ -1,0 +1,29 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+}
+
+.center-upper {
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.65em;  /* Adjust the font size as needed */
+}
+
+.center-upper {
+  color: white; /* Change the color value to your desired color */
+}
+
+
+
+:root {
+  --custom-background-color: grey;
+}
+body {
+  background-color: var(--custom-background-color);
+}
