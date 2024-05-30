@@ -3,49 +3,40 @@ html {
   width: 100%;
 }
 
-h1 {
-  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
-}
-
-.bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40px; /* Adjust the height of the bar */
-  background-color: rgba(0, 0, 0, 0.2); /* Adjust the RGB values and transparency as needed */
-  z-index: -1; /* This places the bar behind the text */
-}
-
-.center-upper {
-  position: absolute;
-  top: 2.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.65em;  /* Adjust the font size as needed */
-}
-
-.center-upper {
-  color: white; /* Change the color value to your desired color */
-}
-
-.placeholder {
-  position: absolute; /* Set the position to absolute for precise positioning */
-  top: 25%; /* Adjust the vertical position, e.g., 50% is center */
-  left: 50%; /* Adjust the horizontal position, e.g., 50% is center */
-  transform: translate(-50%, -50%); /* Center the square using CSS transform */
-  width: 85%; /* Adjust the width as needed */
-  height: 18.5%; /* Adjust the height as needed */
-  border-radius: 15px; /* Adjust the border radius for rounded corners */
-  background-color: rgba(0, 0, 0, 0.2); /* Set the background color of the placeholder */
-  text-align: center; /* Center the text inside the placeholder */
-  line-height: 1; /* Make the text fit within the size of the square */
-  color: white; /* Set the text color */
-}
-
-:root {
-  --custom-background-color: grey;
-}
 body {
-  background-color: var(--custom-background-color);
+  font-family: Arial, sans-serif;
+}
+
+/* Added a new rule for the body element to allow for background color change */
+body {
+  background-color: #474747; /* Initial background color */
+  color: white;
+}
+
+header {
+  background-color: #383838;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+header h1 {
+  font-size: calc(15px + 2vw);
+  margin: 0;
+}
+
+.text-box {
+  background-color: #383838;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  width: 65vw; /* 20% of the viewport width */
+  margin: 0 auto; /* Center on the x-axis */
+  transform: translateY(10%);
+  color: #ffffff;
+}
+.text-box p {
+  font-size: calc(2px + 2vw); /* Scale text with viewport width */
+  margin: 0;
 }
